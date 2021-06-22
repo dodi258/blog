@@ -11,7 +11,7 @@ const Footer = () => {
     <footer id="footer">
       <div className="container">
         <div className="footer-social">
-          <div className="footer-social-text">Follow Us</div>
+          <div className="footer-social-text">Follow Dodi</div>
           <div className="footer-social-icons">
             <a
               target="_blank"
