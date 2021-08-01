@@ -52,3 +52,5 @@ git pull origin master
 ```
 
 Also, if you run into `childImageSharp` errors. It can often occur when Gatsby isn't accurately keeping track of images. Delete your _cache_ and _public_ folders before reloading the project. In this project the images live in the `/static/images/`. Make sure whatever images you're trying to load are in your project and spelled correctly.
+
+![turtle_boost_icon](https://user-images.githubusercontent.com/55937575/127775176-719e039d-e4ab-4a91-a5b6-20af3b0246f0.png)
