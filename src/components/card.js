@@ -3,13 +3,16 @@ import { Link } from "gatsby"
 import Image from "gatsby-image"
 
 const Card = ({ frontmatter, slug }) => {
+  console.log(frontmatter.isPhotoShow)
   return (
     <figure className="card-styles">
       <Link to={slug}>
+        {frontmatter.isPhotoShow ? 
         <Image
           className="card-image"
           fluid={frontmatter.featuredImage.childImageSharp.fluid}
-        />
+        /> : ''
+      }
       </Link>
 
       <figcaption>

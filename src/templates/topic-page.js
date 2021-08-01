@@ -26,6 +26,7 @@ const TopicPageTemplate = ({ pageContext }) => {
               description
               tags
               category
+              isPhotoShow
               featuredImage {
                 childImageSharp {
                   fluid(maxWidth: 400) {

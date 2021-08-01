@@ -48,10 +48,12 @@ class ArticleTemplate extends Component {
                 </Link>
               ))}
             </div>
+            {post.frontmatter.isPhotoShow ? 
             <Image
               fluid={post.frontmatter.featuredImage.childImageSharp.fluid}
               className="article-image"
-            ></Image>
+            ></Image> : ''
+           }
           </header>
           <div
             className="article-markdown"
@@ -106,6 +108,7 @@ export const pageQuery = graphql`
         description
         tags
         category
+        isPhotoShow
         featuredImage {
           childImageSharp {
             fluid(maxWidth: 800) {
@@ -126,6 +129,7 @@ export const pageQuery = graphql`
             title
             tags
             category
+            isPhotoShow
             featuredImage {
               childImageSharp {
                 fluid(maxWidth: 400) {

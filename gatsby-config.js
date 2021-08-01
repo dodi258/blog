@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Blog Boost Starter`,
+    title: `Turtle Boost Starter `,
+    logo: `static/turtle_boost_icon.png`,
     description: `A Gatsby Netlify CMS powered Blog Starter to boost your development.`,
-    author: `@boostcode`,
+    author: `Dodi258`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

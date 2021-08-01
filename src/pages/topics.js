@@ -27,6 +27,7 @@ const Topics = () => {
               description
               tags
               category
+              isPhotoShow
               featuredImage {
                 childImageSharp {
                   fluid(maxWidth: 400) {

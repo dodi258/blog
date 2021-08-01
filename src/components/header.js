@@ -6,7 +6,7 @@ import { FiMenu } from "react-icons/fi"
 import { MdClose } from "react-icons/md"
 import { IoIosSearch } from "react-icons/io"
 
-const Header = ({ siteTitle, menuOpen, setMenuOpen }) => {
+const Header = ({ siteTitle, siteLogo, menuOpen, setMenuOpen }) => {
   const data = useStaticQuery(graphql`
     {
       allTopicsJson {
@@ -39,6 +39,7 @@ const Header = ({ siteTitle, menuOpen, setMenuOpen }) => {
             }}
           >
             {siteTitle}
+            {siteLogo}
           </Link>
         </button>
 

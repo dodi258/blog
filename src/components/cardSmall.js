@@ -6,10 +6,12 @@ const Card = ({ frontmatter, slug }) => {
   return (
     <figure className="card-small-styles">
       <Link to={slug}>
+        {frontmatter.isPhotoShow ? 
         <Image
           className="card-small-image"
           fluid={frontmatter.featuredImage.childImageSharp.fluid}
-        />
+        />:
+        ''}
       </Link>
 
       <figcaption>

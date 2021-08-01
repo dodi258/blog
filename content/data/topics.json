@@ -1,22 +1,22 @@
 [
   {
-    "name": "Topic 1",
-    "slug": "topic-1",
+    "name": "Study",
+    "slug": "study",
     "image": "../../static/images/topic1logo.jpg"
   },
   {
-    "name": "Topic 2",
-    "slug": "topic-2",
+    "name": "Java",
+    "slug": "java",
     "image": "../../static/images/topic2logo.jpg"
   },
   {
-    "name": "Topic 3",
-    "slug": "topic-3",
+    "name": "Web",
+    "slug": "web",
     "image": "../../static/images/topic3logo.jpg"
   },
   {
-    "name": "Topic 4",
-    "slug": "topic-4",
+    "name": "Memo",
+    "slug": "memo",
     "image": "../../static/images/topic4logo.jpg"
   }
 ]

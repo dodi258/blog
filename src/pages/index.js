@@ -30,6 +30,7 @@ const IndexPage = props => {
               description
               category
               tags
+              isPhotoShow
               featuredImage {
                 childImageSharp {
                   fluid(maxWidth: 600) {

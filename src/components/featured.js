@@ -17,9 +17,11 @@ const Featured = ({ markdown }) => {
               >
                 <Link to={node.fields.slug}>
                   <div className="featured-overlay"></div>
+                  {node.frontmatter.isPhotoShow ? 
                   <Image
                     fluid={node.frontmatter.featuredImage.childImageSharp.fluid}
                   />
+                 : ''}
                   <figcaption>
                     <h2>{node.frontmatter.title}</h2>
                     <span>{node.frontmatter.category}</span>
@@ -35,9 +37,10 @@ const Featured = ({ markdown }) => {
               >
                 <Link to={node.fields.slug}>
                   <div className="featured-overlay"></div>
+                  {node.frontmatter.isPhotoShow ?
                   <Image
                     fluid={node.frontmatter.featuredImage.childImageSharp.fluid}
-                  />
+                  />: ''}
                   <figcaption>
                     <h2>{node.frontmatter.title}</h2>
                     <span>{node.frontmatter.category}</span>
