@@ -4,7 +4,7 @@ title: Effective Java (4) - 인스턴스화를 막으려거든 private 생성자
 slug: test-post-11
 date: 2021-08-09T21:50:00.258Z
 dateModified: 2021-08-09T21:50:00.258Z
-description: Effective java - item3
+description: Effective java - item4
 featuredPost: false
 category: Java
 tags:
@@ -56,4 +56,18 @@ public class UtilityClass {
     }
 }
 ```
+
+<br>
+
+## 실제 사용되는 예 ##
+스프링 에서는 [StringUtils](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/util/StringUtils.html) 의 경우에 abstract 클래스로 만들어서 Utils 클래스를 제공한다. 
+
+abstract 클래스를 상속받아서 new 로 새 인스턴스를 만든다고 한들 static 으로 구현된 method 나 멤버는 static 하게 사용할 수 밖에 없어서 그러신 것 같다. 
+
+
+(상속 받아도 별 소용은 없음 - 원작자가 의도하신 바는 아니겠지만 ...)
+![Spring StringUtils](https://i.pinimg.com/originals/4f/31/98/4f31983c6c2d0d5ebaea6c6801aaf157.jpg)
+
+
+<br>
 

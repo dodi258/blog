@@ -144,7 +144,10 @@ private Object readResolve(
 public 필드 방식과 비슷하지만 (전통방식), 더 간결하고, 직렬화/역직렬화도 신경쓸 필요없고, 
 리플렉션 공격도 막을 수 있는 방법. 
 
-        "대부분의 상황에서는 원소가 하나뿐인 열거 타입이 싱글턴을 만드는 가장 좋은 방법이다."
+> "대부분의 상황에서는 원소가 하나뿐인 열거 타입이 싱글턴을 만드는 가장 좋은 방법이다."
+
+<br>
+
 ```java
 public enum Elvis {
     INSTANCE; 
@@ -248,3 +251,6 @@ public class Main {
 **출처**
 1) Effective Java 3/E : 이펙티브 자바 3판 (책)
 2) [이팩티브 자바] #3 싱글톤을 만드는 여러가지 방법 그중에 최선은?: [백기선님 유투브](https://www.youtube.com/watch?v=xBVPChbtUhM&list=PLfI752FpVCS8e5ACdi5dpwLdlVkn0QgJJ&index=3)
+
+<br>
+
