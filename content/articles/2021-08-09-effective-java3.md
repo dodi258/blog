@@ -18,7 +18,7 @@ featuredImage: /images/effective_java5.jpg
 ### **싱글톤 ?** 
 애플리케이션 안에서 클래스의 인스턴스가 한개만 쓰이는것을 말한다. 
 
-### **싱글턴을 만드는 방식**
+### **싱글톤을 만드는 방식**
 <br>
     1) Final 필드 <br>
     2) 정적 (static) 팩토리 메서드 <br>
@@ -162,12 +162,12 @@ public 필드 방식과 비슷하지만 (전통방식), 더 간결하고, 직렬
 
 **예시**
 ```java
-// Service
+// Service - instance 만들 클래스
 @Serivce
 public class Service {...}
 ```
 
-<싱글톤 X>
+**<싱글톤 X>**
 ```java
 public class NoSingletonTest {
     public static void main(String[] args) {
@@ -177,7 +177,7 @@ public class NoSingletonTest {
     }
 }
 ```
-<싱글톤 O - @Autowired>
+**<싱글톤 O - @Autowired>**
 ```java
 public class SingletonTest {
     @Autowired
@@ -185,8 +185,14 @@ public class SingletonTest {
     ... 
 }
 ```
+
+<br>
+
 -------------------
-<싱글톤 O - 기본 scope 빈>
+
+<br>
+
+**<싱글톤 O - 기본 scope 빈>**
 
 ```java
 @Configuration
@@ -207,7 +213,7 @@ public class Main {
 ```
 
 
-<싱글톤 X - Prototype 빈>
+**<싱글톤 X - Prototype 빈>**
 ```java
 @Configuration
 @Scope("prototype")
@@ -225,8 +231,12 @@ public class Main {
 }
 ```
 
+<br>
 
 ---------
-출처
+
+<br>
+
+**출처**
 1) Effective Java 3/E : 이펙티브 자바 3판 (책)
 2) [이팩티브 자바] #3 싱글톤을 만드는 여러가지 방법 그중에 최선은?: [백기선님 유투브](https://www.youtube.com/watch?v=xBVPChbtUhM&list=PLfI752FpVCS8e5ACdi5dpwLdlVkn0QgJJ&index=3)
