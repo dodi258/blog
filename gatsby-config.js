@@ -46,8 +46,17 @@ module.exports = {
               maxWidth: 590,
             },
           },
-          `gatsby-remark-prismjs`,
+          //`gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              inlineCodeMarker: null,
+              aliases: {},
+              showLineNumbers: false,
+              noInlineHighlight: false,
+            },
+          },
         ],
       },
     },

@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Java Package Structure Design
+title: 자바 패키지 - Java Package Structure Design
 slug: test-post-9
 date: 2020-06-14T00:37:45.876Z
 dateModified: 2020-06-14T00:37:45.901Z
